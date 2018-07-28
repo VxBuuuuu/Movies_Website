@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			each movie in movies
+				console.log(movie)
+				.col-md-7
+					embed(src="#{movie.flash}", allowFullScreen="true", quality="high", width="576", height="480", align="middle")
+				.col-md-5
+					dl.dl-horizontal
+						dt Moive Name
+						dd= movie.title
+						dt Moive director
+						dd= movie.doctor
+						dt Moive country
+						dd= movie.country
+						dt Moive language
+						dd= movie.language

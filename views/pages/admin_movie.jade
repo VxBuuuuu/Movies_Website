@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			form.form-horizontal(method="post", action="/admin/movie/new")
+				input#inputid.form-control(type="hidden", name='_id', value="#{movie._id}")
+				.form-group
+					//- <label class="custom-control-label" for="customCheck">Movie  Name</label>
+					label.col-sm-3.control-label(for="inputTitle") Movie_Name
+					.col-sm-10
+						input#inputTitle.form-control(type="text", name='title', value="#{movie.title}")
+				.form-group
+					label.col-sm-3.control-label(for="inputDoctor") Movie Doctor
+					.col-sm-10
+						input#inputDoctor.form-control(type="text", name='doctor', value="#{movie.doctor}")
+				.form-group
+					label.col-sm-3.control-label(for="inputCountry") Movie Country
+					.col-sm-10
+						input#inputCountry.form-control(type="text", name='country', value="#{movie.country}")
+				.form-group
+					label.col-sm-3.control-label(for="inputLanguage") Movie Language
+					.col-sm-10
+						input#inputLanguage.form-control(type="text", name='language', value="#{movie.language}")
+				.form-group
+					label.col-sm-3.control-label(for="inputPoster") Movie Poster
+					.col-sm-10
+						input#inputPoster.form-control(type="text", name='poster', value="#{movie.poster}")
+				.form-group
+					label.col-sm-3.control-label(for="inputYear") Movie Year
+					.col-sm-10
+						input#inputYear.form-control(type="text", name='movie[year]', value="#{movie.year}")
+				.form-group
+					label.col-sm-3.control-label(for="inputSummary") Movie Summary
+					.col-sm-10
+						input#inputSummary.form-control(type="text", name='summary', value="#{movie.summary}")
+				.form-group
+					label.col-sm-3.control-label(for="inputFlash") Movie Flash
+					.col-sm-10
+						input#inputSummary.form-control(type="text", name='flash', value="#{movie.flash}")							
+				.form-group
+					.col-sm-offset-2.col-sm-10
+					button.btn.btn-default(type=submit) SUBMIT

@@ -1,0 +1,25 @@
+{
+  "name": "imooc_study",
+  "description": "my movies",
+  "main": "",
+  "authors": [
+    "xiezibu <470275013@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "movie"
+  ],
+  "homepage": "http://localhost:3000/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^4.1.3",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "imooc_study",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.5",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "underscore": "^1.9.1"
+  },
+  "description": "http://localhost:3000/\r http://localhost:3000/admin/list\r http://localhost:3000/admin/movie",
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": [
+    "movie"
+  ],
+  "author": "VX",
+  "license": "MIT"
+}
